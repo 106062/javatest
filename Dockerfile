@@ -1,4 +1,4 @@
-FROM maven:3.6.3-openjdk-15
+FROM maven:3.6-openjdk-14
 COPY target/* /workspace
 WORKDIR /workspace
 EXPOSE 8080
