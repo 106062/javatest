@@ -6,7 +6,13 @@
 echo "$1" 
 echo "$2"
 
+### close and clean old service here
 ssh $2 "
 cd ~/target/
 rm -rf *
 "
+
+### scp new data here
+scp -r $1/targert/ $2:~/target/
+
+### restart service
