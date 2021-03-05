@@ -1,0 +1,12 @@
+### scp war to remote server
+
+### $1, local jenkins slave path
+### $2, remoter server path
+
+echo "$1" 
+echo "$2"
+
+ssh $2 "
+cd ~/target/
+rm -rf *
+"
