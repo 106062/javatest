@@ -3,8 +3,8 @@
 ### $1, local jenkins slave path
 ### $2, remoter server path
 
-echo "$1" 
-echo "$2"
+echo "1: $1" 
+echo "2: $2"
 
 ### close and clean old service here
 ssh $2 "
@@ -13,6 +13,6 @@ rm -rf *
 "
 
 ### scp new data here
-scp -r $1/targert/ $2:~/target/
+scp -r $1 $2:~/target/
 
 ### restart service
