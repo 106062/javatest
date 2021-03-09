@@ -46,6 +46,7 @@
 			<plugin>
 				<groupId>org.wildfly.plugins</groupId>
 				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>19.0.0.Final</version>
 			</plugin>
 		</plugins>
 	</build>
