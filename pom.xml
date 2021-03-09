@@ -38,7 +38,7 @@
 	</dependencies>
 
 	<profiles>
-		<pfrofile>
+		<profile>
 			<id>testdemo</id>
 			<properties>
 			</properties>
