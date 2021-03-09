@@ -51,4 +51,9 @@
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>testdemo</id>
+		</profile>
+	</profiles>
 </project>
