@@ -10,7 +10,6 @@
 	</parent>
 	<groupId>demo</groupId>
 	<artifactId>testdemo</artifactId>
-	<version>0.0.1</version>
 	<packaging>war</packaging>
 	<name>testdemo</name>
 	<description>Demo project for Spring Boot</description>
@@ -37,19 +36,23 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.wildfly.plugins</groupId>
-				<artifactId>wildfly-maven-plugin</artifactId>
-				<version>19.0.0.Final</version>
-			</plugin>
-
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+	<profiles>
+		<profile>
+		<id>testdemo</id>
+		<build>
+			<plugins>
+				<plugin>
+					<groupId>org.wildfly.plugins</groupId>
+					<artifactId>wildfly-maven-plugin</artifactId>
+					<version>19.0.0.Final</version>
+				</plugin>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</build>
+	</profile>
+	</profiles>
 
 </project>
