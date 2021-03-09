@@ -55,4 +55,8 @@
 	</profile>
 	</profiles>
 
+	<pluginGroups>
+		<pluginGroup>org.wildfly.plugins</pluginGroup>
+	</pluginGroups>
+
 </project>
