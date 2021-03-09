@@ -37,18 +37,23 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.wildfly.plugins</groupId>
-				<artifactId>wildfly-maven-plugin</artifactId>
-				<version>19.0.0.Final</version>
-			</plugin>
-		</plugins>
-	</build>
+	<profiles>
+		<profile>
+			<build>
+				<id>testdemo</id>
+				<plugins>
+					<plugin>
+						<groupId>org.wildfly.plugins</groupId>
+						<artifactId>wildfly-maven-plugin</artifactId>
+						<version>19.0.0.Final</version>
+					</plugin>
 
+					<plugin>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-maven-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
