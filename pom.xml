@@ -37,13 +37,16 @@
 		</dependency>
 	</dependencies>
 
+	<profiles>
+		<pfrofile>
+			<id>testdemo</id>
+			<properties>
+			</properties>
+		</profile>
+	</profiles>
+
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.wildfly.plugins</groupId>
-				<artifactId>wildfly-maven-plugin</artifactId>
-				<version>19.0.0.Final</version>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
