@@ -12,6 +12,7 @@
 	<artifactId>testdemo</artifactId>
 	<packaging>war</packaging>
 	<name>testdemo</name>
+	<version>0.2.0</version>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>14</java.version>
@@ -36,27 +37,18 @@
 		</dependency>
 	</dependencies>
 
-	<profiles>
-		<profile>
-		<id>testdemo</id>
-		<build>
-			<plugins>
-				<plugin>
-					<groupId>org.wildfly.plugins</groupId>
-					<artifactId>wildfly-maven-plugin</artifactId>
-					<version>19.0.0.Final</version>
-				</plugin>
-				<plugin>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-maven-plugin</artifactId>
-				</plugin>
-			</plugins>
-		</build>
-	</profile>
-	</profiles>
-
-	<pluginGroups>
-		<pluginGroup>org.wildfly.plugins</pluginGroup>
-	</pluginGroups>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>19.0.0.Final</version>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

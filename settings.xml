@@ -1,0 +1,11 @@
+<settings>
+	<<profiles>
+		<profile>
+			<id>testdemo</id>
+		</profile>
+	</profiles>
+
+	<pluginGroups>
+		<pluginGroup>org.wildfly.plugins</pluginGroup>
+	</pluginGroups>
+</settings>
